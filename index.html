@@ -23,17 +23,83 @@
             <p class="search-bar"><a href="#"></a></p>
             <div id="gnb">
                 <ul>
-                    <li><a href="#">조회/발급</a></li>
-                    <li><a href="#">민원증명</a></li>
-                    <li><a href="#">신청/제출</a></li>
-                    <li><a href="#">신고/납부</a></li>
-                    <li><a href="#">상담/제보</a></li>
-                    <li><a href="#">세무대리/납부대리</a></li>
+                    <li><a href="#">조회/발급</a>
+                        <ul>
+                            <li><a href="#">전자세금계산서</a></li>
+                            <li><a href="#">현금영수증</a></li>
+                            <li><a href="#">세금신고납부</a></li>
+                            <li><a href="#">기타조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">민원증명</a>
+                        <ul>
+                            <li><a href="#">민원증명 신청/조회</a></li>
+                            <li><a href="#">민원증명발급신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">신청/제출</a>
+                        <ul>
+                            <li><a href="#">일반 신청/제출</a></li>
+                            <li><a href="#">사업자등록신청/정정 등</a></li>
+                            <li><a href="#">소비제세 신청</a></li>
+                            <li><a href="#">(근로&middot;사업등)지급명세서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">신고/납부</a>
+                        <ul>
+                            <li><a href="#">세금신고</a></li>
+                            <li><a href="#">일반신고</a></li>
+                            <li><a href="#">세금납부</a></li>
+                            <li><a href="#">신고삭제/부속서류</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">상담/제보</a>
+                        <ul>
+                            <li><a href="#">현금영수증 민원신고</a></li>
+                            <li><a href="#">상담사례검색</a></li>
+                            <li><a href="#">납세지원</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">세무대리/납부대리</a>
+                        <ul>
+                            <li><a href="#">세무대리 공통</a></li>
+                            <li><a href="#">기장대리</a></li>
+                            <li><a href="#">신고대리</a></li>
+                            <li><a href="#">납세관리인</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
-        <div id="container">
-            
+        <div id="bg-container">
+            <div id="container">
+                <h1 class="tit-1">전국 세금<br>신고 납부 서비스</h1>
+                <div class="tax-calc">
+                    <h2>빠른납부</h2>
+                    <p>전자납부번호 19자리 또는<br>전자수용가번호 15자리 입력</p>
+                    <form action="" method="POST">
+                        <input type="number" name="tax-number" id="tax-number-1" maxlength="20" size="25" placeholder="숫자만 입력" ><label for="tax-number-1"></label>
+                        <div class="auto-input-1">
+                            <input type="submit" value="새로고침">
+                            <input type="submit" value="음성듣기">
+                        </div>
+                        <input type="text" name="auto-input" id="auto-input-2" maxlength="10" size="15" placeholder="자동입력방지문자 입력"><label for="auto-input-2"></label>
+                    </form>
+                    <p><a href="#">납부번호 확인방법</a></p>
+                </div>
+                <div class="calendar">
+                    <div class="early-calc">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="banner-slide">
+
+        </div>
+        <div id="board-service-1">
+
         </div>
         <div id="bg-footer">
             <footer id="footer">
