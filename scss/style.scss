@@ -1,3 +1,93 @@
 @charset "utf-8";
 @import url('../css/reset.css');
 @import 'design';
+
+body {
+  width: 100%;
+  font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
+    '돋움', sans-serif;
+}
+#header {
+  width: $width-1;
+  margin: 0 auto;
+  .header_top {
+    overflow: hidden;
+    .header_top_logo {
+      float: left;
+      a {
+        display: block;
+        width: 93px;
+        height: 50px;
+        color: #fff;
+        font-size: 15px;
+        background-color: $mainColor-1;
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+    ul {
+      float: right;
+      overflow: hidden;
+      margin-top: 20px;
+      li {
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &::before {
+          position: absolute;
+          top: 5px;
+          left: -11px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 9px;
+          background-color: $footerColor-1;
+        }
+        a {
+          color: $mainColor-1;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .header-bot {
+    position: relative;
+    padding: 20px 0 20px;
+    height: 80px;
+    .logo {
+      display: block;
+      text-indent: -9999px;
+      width: 202px;
+      height: 54px;
+      background: url('../images/common/logo.png') no-repeat 0 0;
+    }
+    .all-menu {
+      a {
+        display: block;
+      }
+    }
+  }
+}
+#gnb {
+  position: absolute;
+  top: 38px;
+  left: 196px;
+  > ul {
+    overflow: hidden;
+    > li {
+      float: left;
+      margin-left: 40px;
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        color: $fontColor-1;
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+}
