@@ -1,0 +1,25 @@
+@charset "utf-8";
+html{-webkit-text-size-adjust:none;}
+*{margin: 0;padding: 0; box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box;}
+li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+em{font-style: normal;}
+address{font-style: normal;}
+img{vertical-align: middle;border: none;}
+img,video{max-width: 100%;}
+input{vertical-align: middle;}
+input[type="text"], input[type="password"]{border: 1px solid #aaa;}
+input,textarea,select{border-radius:0;}
+fieldset{border: none;}
+legend,caption{position: absolute;left: -9999px;}
+/* display:none은 탭메뉴만 왜냐하면 텍스트를 못읽는다 접근성 떨어짐 */
+.skip-menu a{position: fixed; top: -500px;width: 100%;background-color: #000;color: #fff; text-align: center; padding: 10px 0;z-index: 9999;}
+.skip-menu a:focus{top: 0;}
+.skip-gnb a{position: fixed; top: -500px;width: 100%;background-color: #000;color: #fff; text-align: center; padding: 10px 0;z-index: 9999;}
+.skip-gnb a:focus{top: 0;}
+/* 이미지를 추가하면 간격이 추가로 생기는 버그가 발생한다. 그러므로 vertical-align: top;을 통해 버그를 해결한다.  */
+.hide{display: none;}
+.blind{position: absolute;left: -9999px;}
+table{border-collapse: collapse;}
