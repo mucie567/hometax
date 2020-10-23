@@ -246,14 +246,17 @@ body {
       margin-left: 30px;
       margin-top: 30px;
       color: #fff;
+      text-align: center;
       h2 {
         font-size: 20px;
-        text-align: center;
+        border-bottom: 1px solid $mainColor-1;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
         .month {
           font-size: 25px;
         }
       }
-      *[class*='slide-'] {
+      .slide-1 {
         position: absolute;
         top: 30px;
         left: 30px;
@@ -262,9 +265,68 @@ body {
         background: url(../images/main/calender-slide-2.png) no-repeat 0 0;
       }
       .slide-2 {
-        background: url(../images/main/calender-slide-1.png) no-repeat 0 0;
-        left: 0;
+        background: url(../images/main/calendar-slide-1.png) no-repeat 0 0;
+        position: absolute;
         right: 30px;
+        top: 30px;
+        width: 37px;
+        height: 38px;
+      }
+      > p {
+        margin-bottom: 28px;
+        font-size: 14px;
+      }
+      ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: calc(50% - 90px);
+        li {
+          position: relative;
+          float: left;
+          width: 50%;
+          line-height: 16px;
+          font-size: 12px;
+          padding-left: 8px;
+          text-align: left;
+          &::before {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 7px;
+            left: 0;
+          }
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+        }
+      }
+      .early-calc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 335px;
+        height: 54px;
+        background-color: $mainColor-1;
+        line-height: 54px;
+        p {
+          padding-right: 50px;
+          background: url(../images/main/calander-ico-1.png) no-repeat 240px
+            10px;
+          a {
+            font-size: 20px;
+            font-weight: bold;
+            span {
+              color: #fd9112;
+            }
+          }
+        }
       }
     }
   }
