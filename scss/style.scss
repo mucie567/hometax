@@ -104,12 +104,72 @@ body {
         font-weight: bold;
         color: $fontColor-1;
       }
-      ul {
-        display: block;
+      > ul {
+        overflow: hidden;
+        display: none;
+        &.on {
+          display: block;
+        }
+        li {
+          padding-left: 120px;
+          font-size: 16px;
+          color: $mainColor-1;
+          float: left;
+          &:first-child {
+            padding-left: 0;
+          }
+        }
       }
     }
   }
 }
 #bg-container {
   border-top: 1px solid #ddd;
+  background-color: #dae7f5;
+  #container {
+    width: $width-1;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    .tit-1 {
+      float: left;
+      font-size: 50px;
+      font-weight: bold;
+      color: $fontColor-2;
+      padding-top: 60px;
+      em {
+        color: $mainColor-1;
+      }
+    }
+    .tax-calc {
+      float: left;
+      width: 335px;
+      height: 339px;
+      background-color: #fff;
+      padding: 30px;
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 12px;
+        text-align: right;
+      }
+      form {
+        input[type='text']:first-child {
+          width: 275px;
+          height: 37px;
+          border: 2px solid $boarderColor-1;
+          font-size: 14px;
+          margin: 25px 0 10px;
+        }
+      }
+    }
+    .calendar {
+      float: right;
+      width: 335px;
+      height: 339px;
+      background-color: $mainColor-1;
+    }
+  }
 }
