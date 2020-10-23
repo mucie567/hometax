@@ -10,6 +10,7 @@ body {
 #header {
   width: $width-1;
   margin: 0 auto;
+
   .header_top {
     overflow: hidden;
     .header_top_logo {
@@ -56,6 +57,7 @@ body {
   .header-bot {
     position: relative;
     padding: 20px 0 20px;
+    margin-bottom: 10px;
     height: 80px;
     .logo {
       display: block;
@@ -65,8 +67,25 @@ body {
       background: url('../images/common/logo.png') no-repeat 0 0;
     }
     .all-menu {
+      position: absolute;
+      top: 30px;
+      right: 10px;
       a {
         display: block;
+        width: 36px;
+        height: 36px;
+        background: url(../images/common/ico-all-menu-1.png) no-repeat 0 0;
+      }
+    }
+    .search-bar {
+      position: absolute;
+      top: 28px;
+      right: 60px;
+      a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: url(../images/common/ico-sch-1.png) no-repeat 0 0;
       }
     }
   }
@@ -77,17 +96,20 @@ body {
   left: 196px;
   > ul {
     overflow: hidden;
-    > li {
+    *[class*='gnb-'] {
       float: left;
       margin-left: 40px;
-      a {
+      > a {
         font-size: 18px;
         font-weight: bold;
         color: $fontColor-1;
       }
       ul {
-        display: none;
+        display: block;
       }
     }
   }
+}
+#bg-container {
+  border-top: 1px solid #ddd;
 }
