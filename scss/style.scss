@@ -237,12 +237,35 @@ body {
       }
     }
     .calendar {
+      position: relative;
       float: right;
       width: 335px;
       height: 339px;
-      background-color: $mainColor-1;
+      background-color: $mainColor-2;
+      padding: 30px;
       margin-left: 30px;
       margin-top: 30px;
+      color: #fff;
+      h2 {
+        font-size: 20px;
+        text-align: center;
+        .month {
+          font-size: 25px;
+        }
+      }
+      *[class*='slide-'] {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 37px;
+        height: 38px;
+        background: url(../images/main/calender-slide-2.png) no-repeat 0 0;
+      }
+      .slide-2 {
+        background: url(../images/main/calender-slide-1.png) no-repeat 0 0;
+        left: 0;
+        right: 30px;
+      }
     }
   }
 }
