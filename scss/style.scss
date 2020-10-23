@@ -147,6 +147,8 @@ body {
       height: 339px;
       background-color: #fff;
       padding: 30px;
+      margin-left: 100px;
+      margin-top: 30px;
       h2 {
         font-size: 20px;
         font-weight: bold;
@@ -156,12 +158,81 @@ body {
         text-align: right;
       }
       form {
+        position: relative;
         input[type='text']:first-child {
           width: 275px;
-          height: 37px;
+          height: 38px;
           border: 2px solid $boarderColor-1;
           font-size: 14px;
           margin: 25px 0 10px;
+          padding-left: 7px;
+          color: $fontColor-1;
+          font-size: 14px;
+        }
+        .auto-input-1 {
+          position: relative;
+          width: 275px;
+          height: 72px;
+          border: 1px solid $boarderColor-1;
+          padding-left: 178px;
+          background: url(../images/main/tax-calc-2.png) no-repeat 0 0;
+          margin-bottom: 10px;
+          input[type='submit'] {
+            width: 97px;
+            height: 36px;
+            font-size: 12px;
+            border: 1px solid $boarderColor-1;
+            background-color: #fff;
+            padding-left: 23px;
+            background: url(../images/main/tax-calc-3.png) no-repeat 11px 11px;
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            &:last-child {
+              top: 35px;
+              right: -1px;
+              background: url(../images/main/tax-calc-4.png) no-repeat 13px 10px;
+            }
+          }
+        }
+      }
+      p {
+        position: relative;
+        ::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 107px;
+          width: 16px;
+          height: 16px;
+          background: url(../images/main/tax-calc-1.png);
+        }
+        a {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+    #auto-input-2 {
+      width: 178px;
+      height: 32px;
+      border: 1px solid $boarderColor-1;
+      font-size: 12px;
+      padding-left: 7px;
+      color: $fontColor-1;
+      + label {
+        position: absolute;
+        top: 155px;
+        right: 0;
+        a {
+          display: block;
+          width: 90px;
+          height: 32px;
+          background-color: $mainColor-1;
+          color: $fontColor-1;
+          text-align: center;
+          line-height: 32px;
         }
       }
     }
@@ -170,6 +241,8 @@ body {
       width: 335px;
       height: 339px;
       background-color: $mainColor-1;
+      margin-left: 30px;
+      margin-top: 30px;
     }
   }
 }
