@@ -331,3 +331,17 @@ body {
     }
   }
 }
+#banner-slide {
+  width: $width-1;
+  margin: 0 auto;
+  padding: 40px 0 40px;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: $fontColor-2;
+  }
+  .banner-ico {
+    overflow: hidden;
+    background-color: #f00;
+  }
+}
