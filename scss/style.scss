@@ -679,9 +679,48 @@ body {
   }
   .sitemap-select {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 110px;
+    right: 335px;
+    input[type='submit'] {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      width: 50px;
+      height: 35px;
+      color: #fff;
+      background-color: $boarderColor-1;
+      border: 1px solid transparent;
+    }
+  }
+  .footer-site-ico {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    overflow: hidden;
+    li {
+      text-indent: -9999px;
+      float: left;
+      width: 72px;
+      height: 29px;
+      background: url('../images/common/footer-ico-1.png') no-repeat 0 0;
+      margin-left: 10px;
+      &.footer-site-ico-2 {
+        background: url('../images/common/footer-ico-2.png') no-repeat 0 0;
+      }
+      &.footer-site-ico-3 {
+        background: url('../images/common/footer-ico-3.png') no-repeat 0 0;
+      }
+    }
   }
 }
 #sitemap-tab-menu {
+  width: 190px;
+  height: 35px;
+  background-color: $footerColor-1;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 16px;
+}
+
+@media() {
 }
