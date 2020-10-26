@@ -332,6 +332,7 @@ body {
   }
 }
 #banner-slide {
+  position: relative;
   width: $width-1;
   margin: 0 auto;
   padding: 40px 0 40px;
@@ -339,9 +340,94 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: $fontColor-2;
+    margin-bottom: 20px;
   }
+
   .banner-ico {
-    overflow: hidden;
-    background-color: #f00;
+    padding: 13px 30px;
+    li {
+      float: left;
+      width: 10%;
+      height: auto;
+      a {
+        padding: 0px 12px;
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: $mainColor-1;
+        background: url(../images/main/bannerslide/banner-slide-ico-1.png)
+          no-repeat 50% 0;
+        p {
+          padding-top: 52px;
+        }
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .banner-slide-1 {
+    .banner-slide-1-1 {
+      position: absolute;
+      top: 117px;
+      left: 0;
+      width: 29px;
+      height: 56px;
+      background: url('../images/main/banner-slide-2.png') no-repeat 0 0;
+    }
+    .banner-slide-1-2 {
+      position: absolute;
+      top: 117px;
+      right: 0;
+      width: 29px;
+      height: 56px;
+      background: url('../images/main/banner-slide-1.png') no-repeat 0 0;
+    }
+  }
+  .btn-more-1 {
+    position: absolute;
+    top: 45px;
+    left: 135px;
+    a {
+      display: block;
+      width: 55px;
+      height: 20px;
+      background-color: $fontColor-1;
+      color: #fff;
+      padding-left: 20px;
+      &::before {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 7px;
+        background-color: #fff;
+      }
+      &::after {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 7px;
+        background-color: #fff;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+#board-service {
+  overflow: hidden;
+  .board-left {
+    float: left;
+  }
+  .service-right {
+    float: right;
   }
 }
