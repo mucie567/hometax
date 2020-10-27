@@ -124,6 +124,8 @@ body {
     }
 }
 #container{
+  width: $width-1;
+  margin: 0 auto;
   .bg-container {
     border-top: 1px solid #ddd;
     background-color: #dae7f5;
@@ -272,20 +274,35 @@ body {
     padding: 50px 45px 50px 45px ;
     .nmb-box-01{
       display: inline-block;
+      position: relative;
+      font-size: 18px;
       > dl{
-        border: 1px solid #000;
         height: 32px;
-        width: 440px;
+        width: 600px;
         margin-bottom: 10px;
-        position: relative;
-        > input{
-          position: absolute;
+        
+        > dt{
+          display: inline-block;
           top: 0;
           left: 0;
+          width: 150px;
+          padding-right: 30px;
         }
+        > dd{
+          display: inline;
+        }
+        
       }
       > input[type="submit"]{
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 74px;
+        height: 72px;
+        background-color: $mainColor-2;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
       }
     }
     > p{
