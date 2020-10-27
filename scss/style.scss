@@ -849,7 +849,27 @@ body {
     }
   }
   #gnb {
-    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor-1;
+    z-index: 300;
+    overflow-y: auto;
+    ul {
+      padding-top: 80px;
+      *[class*='gnb-'] {
+        float: none;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #fff;
+        margin: 0;
+        padding-left: 40px;
+        > a {
+          color: #fff;
+        }
+      }
+    }
   }
   #footer {
     text-align: center;
