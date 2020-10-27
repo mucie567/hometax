@@ -3,7 +3,7 @@
 @import 'design';
 
 body {
-  max-width: 100%;
+  width: 100%;
   font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
     '돋움', sans-serif;
 }
@@ -296,6 +296,7 @@ body {
         width: 100%;
         height: auto;
         position: relative;
+        overflow: hidden;
         top: 0;
         left: calc(50% - 90px);
         li {
@@ -315,11 +316,6 @@ body {
             position: absolute;
             top: 7px;
             left: 0;
-          }
-          &::after {
-            content: '';
-            display: block;
-            clear: both;
           }
         }
       }
@@ -360,6 +356,7 @@ body {
   }
 
   .banner-ico {
+    width: $width-1;
     padding: 13px 30px;
     li {
       float: left;
@@ -775,11 +772,14 @@ body {
   }
 }
 
-@media (max-width: 1023px) and (min-width: 720px) {
+@media (max-width: 1023px) {
   // #banner-slide,
   // #board-service {
   //   padding: 0 10px;
   // }
+  body {
+    padding: 10px;
+  }
   #header {
     .header_top {
       display: none;
@@ -810,7 +810,7 @@ body {
     }
   }
   #banner-slide {
-    .banner-ico {
+    .banner-ico-1 {
       overflow-x: auto;
     }
   }
@@ -902,25 +902,55 @@ body {
       }
       .calendar {
         position: relative;
+        top: -100px;
+        left: 0;
         margin: 0 auto;
-        width: 100%;
-        .early-calc {
-          width: 100%;
-        }
       }
     }
   }
   #auto-input-2 {
     display: none;
   }
+  #banner-slide {
+    top: -115px;
+    .banner-ico-1 {
+      overflow-x: auto;
+    }
+  }
   #board-service {
+    top: -115px;
     .board-left {
       float: none;
       width: 100%;
+      input[type='radio'] {
+        + label {
+          font-size: 14px;
+        }
+        &:checked {
+          + label {
+            font-size: 16px;
+          }
+        }
+      }
+      .btn-more-2 {
+        display: none;
+      }
     }
     .service-right {
-      float: none;
-      width: 100%;
+      text-align: center;
+      ul {
+        li {
+          width: 50%;
+          &:nth-child(2n + 1) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    address {
+      display: none;
     }
   }
 }
