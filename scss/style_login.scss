@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import 'design';
+@import url('../css/reset.css');
+
+body {
+    width: 100%;
+    font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
+      '돋움', sans-serif;
+}
+#header {
+    width: $width-1;
+    margin: 0 auto;
+  
+    .header_top {
+      overflow: hidden;
+      .header_top_logo {
+        float: left;
+        a {
+          display: block;
+          width: 93px;
+          height: 50px;
+          color: #fff;
+          font-size: 15px;
+          background-color: $mainColor-1;
+          text-align: center;
+          line-height: 50px;
+        }
+      }
+      ul {
+        float: right;
+        overflow: hidden;
+        margin-top: 20px;
+        li {
+          position: relative;
+          float: left;
+          margin-left: 20px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &::before {
+            position: absolute;
+            top: 5px;
+            left: -11px;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 9px;
+            background-color: $footerColor-1;
+          }
+          a {
+            color: $mainColor-1;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .header-bot {
+      position: relative;
+      padding: 20px 0 20px;
+      margin-bottom: 10px;
+      height: 80px;
+      .logo {
+        display: block;
+        text-indent: -9999px;
+        width: 202px;
+        height: 54px;
+        background: url('../images/common/logo.png') no-repeat 0 0;
+      }
+      .all-menu {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        a {
+          display: block;
+          width: 36px;
+          height: 36px;
+          background: url(../images/common/ico-all-menu-1.png) no-repeat 0 0;
+        }
+      }
+      .search-bar {
+        position: absolute;
+        top: 28px;
+        right: 60px;
+        a {
+          display: block;
+          width: 36px;
+          height: 36px;
+          background: url(../images/common/ico-sch-1.png) no-repeat 0 0;
+        }
+      }
+    }
+}
+#gnb {
+    position: absolute;
+    top: 38px;
+    left: 196px;
+    > ul {
+      overflow: hidden;
+      *[class*='gnb-'] {
+        float: left;
+        margin-left: 40px;
+        > a {
+          font-size: 18px;
+          font-weight: bold;
+          color: $fontColor-1;
+        }
+        > ul {
+          overflow: hidden;
+          display: none;
+          &.on {
+            display: block;
+          }
+          li {
+            padding-left: 120px;
+            font-size: 16px;
+            color: $mainColor-1;
+            float: left;
+            &:first-child {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+}
+#container{
+  .bg-container {
+    border-top: 1px solid #ddd;
+    background-color: #dae7f5;
+      .login-title-box{
+        width: $width-1;
+        height: 260px;
+        padding: 40px 20px;
+        margin: 0 auto;
+        h1{
+          margin-bottom: 30px;
+          .txt-big{
+            font-size: 50px;
+          }
+        }
+        > p{
+          line-height: 40px;
+          .txt-red{
+            color: red;
+          }
+        }
+      }
+    }
+  .login-member{
+    padding: 50px 45px 0 45px ;
+    .tit-2{
+      padding-right: 20px;
+      overflow: hidden;
+      .mb-box-01{
+        display:block;
+        width: 270px;
+        height: 156px;
+        float: left;
+        > li{
+          display: block;
+          margin-right: 20px;
+          position: relative;
+          background-color: $mainColor-2;
+          border: 1px solid $mainColor-2;
+          border-radius: 10px;
+          text-align: center;
+          > a{
+            display: inline-block;
+            padding-left: 100px;
+            height: 72px;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #fff;
+            &::before{
+              content: '';
+              top: 4px;
+              left: 20px;
+              position: absolute;
+              width: 67px;
+              height: 72px;
+              background: url('../images/login/mb-login-01.png')no-repeat 0 0;
+            }
+          }
+        }
+        > ul{
+          display: block;
+          padding-top: 20px;
+          line-height: 2;
+        }
+      }
+      .mb-box-02{
+        display:block;
+        width: 270px;
+        height: 156px;
+        float: left;
+        > li{
+          display: block;
+          margin-right: 20px;
+          position: relative;
+          background-color: $mainColor-2;
+          border: 1px solid $mainColor-2;
+          border-radius: 10px;
+          text-align: center;
+          > a{
+            display: inline-block;
+            padding-left: 100px;
+            height: 72px;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #fff;
+            &::before{
+              content: '';
+              top: 0;
+              left: 20px;
+              position: absolute;
+              width: 67px;
+              height: 72px;
+              background: url('../images/login/mb-login-02.png')no-repeat 0 0;
+            }
+          }
+        }
+        > ul{
+          display: block;
+          padding-top: 20px;
+          line-height: 2;
+        }
+      }
+      .mb-box-03{
+        display:block;
+        width: 270px;
+        height: 156px;
+        float: left;
+        > li{
+          display: block;
+          margin-right: 20px;
+          position: relative;
+          background-color: $mainColor-2;
+          border: 1px solid $mainColor-2;
+          border-radius: 10px;
+          text-align: center;
+          > a{
+            display: inline-block;
+            padding-left: 100px;
+            height: 72px;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #fff;
+            &::before{
+              content: '';
+              top: 1px;
+              left: 23px;
+              position: absolute;
+              width: 67px;
+              height: 72px;
+              background: url('../images/login/mb-login-03.png')no-repeat 0 0;
+            }
+          }
+        }
+        > ul{
+          display: block;
+          padding-top: 20px;
+          line-height: 2;
+        }
+      }
+
+    }
+  }
+  .login-non-member{
+    padding: 50px 45px 50px 45px ;
+    .nmb-box-01{
+      display: inline-block;
+      > dl{
+        border: 1px solid #000;
+        height: 32px;
+        width: 440px;
+        margin-bottom: 10px;
+        position: relative;
+        > input{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      > input[type="submit"]{
+        float: left;
+      }
+    }
+    > p{
+      padding-top: 20px;
+      line-height: 1.6;
+      > .txt-red{
+        color: red;
+      }
+      > .txt-bold{
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+  }
+}
+#tit-1{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+
+// PC (1100~)
+@media (min-width:1100px){}
+
+// Tablet && Mobile (~1099)
+@media (max-width:1099px){}
+
+// Tablet (721 ~ 1099)
+@media (min-width:721px) and (max-width:1099px){}
