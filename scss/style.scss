@@ -180,6 +180,20 @@ body {
           padding-left: 7px;
           color: $fontColor-1;
           font-size: 14px;
+          + label {
+            position: absolute;
+            top: 155px;
+            right: 0;
+            a {
+              display: block;
+              width: 90px;
+              height: 32px;
+              background-color: $mainColor-1;
+              color: $fontColor-1;
+              text-align: center;
+              line-height: 32px;
+            }
+          }
         }
         .auto-input-1 {
           position: relative;
@@ -236,20 +250,6 @@ body {
       font-size: 12px;
       padding-left: 7px;
       color: $fontColor-1;
-      + label {
-        position: absolute;
-        top: 155px;
-        right: 0;
-        a {
-          display: block;
-          width: 90px;
-          height: 32px;
-          background-color: $mainColor-1;
-          color: $fontColor-1;
-          text-align: center;
-          line-height: 32px;
-        }
-      }
     }
     .calendar {
       position: absolute;
@@ -840,7 +840,7 @@ body {
 
 @media (max-width: 719px) {
   body {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   #header {
     .header_top {
@@ -872,18 +872,55 @@ body {
       }
       .tax-calc {
         position: static;
-        max-width: 100%;
-        margin: 0;
-        .auto-input-1 {
-          display: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        form {
+          input[type='text']:first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            + label {
+              a {
+                position: relative;
+                top: -87px;
+                right: 5px;
+              }
+            }
+          }
+          .auto-input-1 {
+            display: none;
+          }
+        }
+        .input-number-1 {
+          text-align: center;
+          position: relative;
+          top: 65px;
+          left: -140px;
         }
       }
       .calendar {
         position: relative;
+        margin: 0 auto;
+        width: 100%;
+        .early-calc {
+          width: 100%;
+        }
       }
     }
   }
   #auto-input-2 {
     display: none;
+  }
+  #board-service {
+    .board-left {
+      float: none;
+      width: 100%;
+    }
+    .service-right {
+      float: none;
+      width: 100%;
+    }
   }
 }
