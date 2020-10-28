@@ -105,16 +105,26 @@ body {
       float: left;
       margin-left: 40px;
       > a {
+        display: block;
         font-size: 18px;
         font-weight: bold;
         color: $fontColor-1;
+        &.on {
+          + ul {
+            display: block;
+          }
+        }
       }
       > ul {
-        overflow: hidden;
+        position: absolute;
+        top: 50px;
+        left: 40px;
         display: none;
-        &.on {
-          display: block;
-        }
+        width: 100%;
+        height: 100%;
+        border: 1px solid $boarderColor-1;
+        background-color: #fff;
+        z-index: 100;
         li {
           padding-left: 120px;
           font-size: 16px;
@@ -122,6 +132,10 @@ body {
           float: left;
           &:first-child {
             padding-left: 0;
+          }
+          > a {
+            display: block;
+            height: 40px;
           }
         }
       }
@@ -856,17 +870,83 @@ body {
     background-color: $mainColor-1;
     z-index: 300;
     overflow-y: auto;
+    display: none;
     ul {
       padding-top: 80px;
       *[class*='gnb-'] {
         float: none;
-        height: 40px;
+        height: auto;
         line-height: 40px;
         border-bottom: 1px solid #fff;
         margin: 0;
-        padding-left: 40px;
+        &:nth-child(2) {
+          border-top: 1px solid #fff;
+        }
         > a {
           color: #fff;
+          padding-left: 40px;
+          height: 40px;
+          &::before {
+            content: '';
+            display: block;
+            position: relative;
+            top: -37px;
+            left: 439px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #fff;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            transform-origin: 50% 50%;
+            transform: rotate(45deg);
+          }
+          &.on {
+            display: block;
+            + ul {
+              position: static;
+              border: none;
+              background: none;
+              padding: 0;
+              li {
+                float: none;
+                padding: 0;
+                height: 40px;
+                border-top: 1px solid #fff;
+                > a {
+                  color: #fff;
+                  padding-left: 60px;
+                  background-color: $mainColor-2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-gnb-close {
+      display: block;
+      a {
+        &::before {
+          position: absolute;
+          top: 10px;
+          left: 25px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 35px;
+          background-color: #fff;
+          transform: rotate(45deg);
+        }
+        &::after {
+          position: absolute;
+          top: 10px;
+          left: 25px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 35px;
+          background-color: #fff;
+          transform: rotate(135deg);
         }
       }
     }
