@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-boards.min.css">
     <title>국세청 홈택스</title>
 </head>
 <body>
-    <div id="wrap">
-        <header id="header">
+    <p class="skip-menu"><a href="#container">본문바로가기</a></p>
+    <header id="header-wrap">
+        <div id="header">
             <div class="header_top">
-                <p class="header_top_logo"><a href="#">헤더로고</a></p>
-                <ul>
+                <p class="header_top_logo"><a href="#">MY 홈택스</a></p>
+                <ul class="util-menu">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">공인인증센터</a></li>
@@ -18,88 +20,101 @@
                     <li><a href="#">부서사용자 가입하기</a></li>
                 </ul>
             </div>
-            <h1 class="logo">로고</h1>
-            <p class="all-menu"><a href="#"></a></p>
-            <p class="search-bar"><a href="#"></a></p>
-            <div id="gnb">
-                <ul>
-                    <li><a href="#">조회/발급</a>
-                        <ul>
-                            <li><a href="#">전자세금계산서</a></li>
-                            <li><a href="#">현금영수증</a></li>
-                            <li><a href="#">세금신고납부</a></li>
-                            <li><a href="#">기타조회</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">민원증명</a>
-                        <ul>
-                            <li><a href="#">민원증명 신청/조회</a></li>
-                            <li><a href="#">민원증명발급신청</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">신청/제출</a>
-                        <ul>
-                            <li><a href="#">일반 신청/제출</a></li>
-                            <li><a href="#">사업자등록신청/정정 등</a></li>
-                            <li><a href="#">소비제세 신청</a></li>
-                            <li><a href="#">(근로&middot;사업등)지급명세서</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">신고/납부</a>
-                        <ul>
-                            <li><a href="#">세금신고</a></li>
-                            <li><a href="#">일반신고</a></li>
-                            <li><a href="#">세금납부</a></li>
-                            <li><a href="#">신고삭제/부속서류</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">상담/제보</a>
-                        <ul>
-                            <li><a href="#">현금영수증 민원신고</a></li>
-                            <li><a href="#">상담사례검색</a></li>
-                            <li><a href="#">납세지원</a></li>
-                            <li><a href="#">기타</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">세무대리/납부대리</a>
-                        <ul>
-                            <li><a href="#">세무대리 공통</a></li>
-                            <li><a href="#">기장대리</a></li>
-                            <li><a href="#">신고대리</a></li>
-                            <li><a href="#">납세관리인</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="header-bot">
+                <h1 class="logo"><a href="#">로고</a></h1>
+                <p class="all-menu"><a href="#gnb"></a></p>
+                <p class="search-bar"><a href="#"></a></p>
+                <div id="gnb">
+                    <ul>
+                        <!-- <li class="gnb-m1"><a href="#" class="on">조회/발급</a> -->
+                        <li class="gnb-m1"><a href="#">조회/발급</a>
+                            <ul>
+                                <li><a href="#">전자세금계산서</a></li>
+                                <li><a href="#">현금영수증</a></li>
+                                <li><a href="#">세금신고납부</a></li>
+                                <li><a href="#">기타조회</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-m2"><a href="#">민원증명</a>
+                            <ul>
+                                <li><a href="#">민원증명 신청/조회</a></li>
+                                <li><a href="#">민원증명발급신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-m3"><a href="#">신청/제출</a>
+                            <ul>
+                                <li><a href="#">일반 신청/제출</a></li>
+                                <li><a href="#">사업자등록신청/정정 등</a></li>
+                                <li><a href="#">소비제세 신청</a></li>
+                                <li><a href="#">(근로&middot;사업등)지급명세서</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-m4"><a href="#">신고/납부</a>
+                            <ul>
+                                <li><a href="#">세금신고</a></li>
+                                <li><a href="#">일반신고</a></li>
+                                <li><a href="#">세금납부</a></li>
+                                <li><a href="#">신고삭제/부속서류</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-m5"><a href="#">상담/제보</a>
+                            <ul>
+                                <li><a href="#">현금영수증 민원신고</a></li>
+                                <li><a href="#">상담사례검색</a></li>
+                                <li><a href="#">납세지원</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-m6"><a href="#">세무대리/납부대리</a>
+                            <ul>
+                                <li><a href="#">세무대리 공통</a></li>
+                                <li><a href="#">기장대리</a></li>
+                                <li><a href="#">신고대리</a></li>
+                                <li><a href="#">납세관리인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="btn-gnb-close">닫기</p>
+                </div>
             </div>
-        </header>
-        <div id="container">
-            <div class="top-menu">
+        </div>
+    </header>
+    <div id="container">
+        <div class="top-menu">
+            <div class="navigation">
                 <ol>
-                    <li>홈</li>
-                    <li>고객센터</li>
-                    <li>공지사항</li>
+                    <li class="home-icon">홈</li>
+                    <li><span>></span><a href="#">고객센터</a></li>
+                    <li><span>></span><a href="boards.html">공지사항</a></li>
                 </ol>
-            </div>         
+            </div>
+        </div>         
+        <div class="contents-box">
             <h2>공지사항</h2>
-            <srh-form>
-                <div class="srh-box">
-                    <select name="serch type" id="srh-type">
-                        <option value="제목">제목</option>
-                        <option value="내용">내용</option>
-                        <option value="번호">번호</option>
-                    </select>
-                </div>
-                <div class="input-box">
-                    <input type="text">
-                    <input type="submit" value="검색">
-                </div>
-            </srh-form>
+            <form class="srh-form" method="POST">
+                <fieldset>
+                    <legend>공지사항 검색</legend>
+                    <ul>
+                        <li class="srh-box">
+                            <select name="serch type" id="srh-type" title="검색어 옵셤을 선택하세요">
+                                <option value="title">제목</option>
+                                <option value="content">내용</option>
+                                <option value="number">번호</option>
+                            </select>
+                        </li>
+                        <li class="input-box">
+                            <input type="text" title="검색어를 입력하세요">
+                            <input type="submit" value="검색">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
             <div class="scope-col">
                 <table>
                     <caption>공지사항 목록</caption>
                     <colgroup>
                         <col style="width:10.9%">
-                        <col style="width:65.45%">
+                        <col style="width:auto">
                         <col style="width:9.09%">
                         <col style="width:13.63%">
                     </colgroup>
@@ -114,61 +129,61 @@
                     <tbody>
                         <tr>
                             <td>203</td>
-                            <td>2020년 귀속 지급명세서 제출 교육용 책자˙동영상 안내</td>
+                            <td class="col-title"><a href="#">2020년 귀속 지급명세서 제출 교육용 책자˙동영상 안내</a></td>
                             <td class="att-file"></td>
                             <td>2020-10-26</td>
                         </tr>
                         <tr>
                             <td>202</td>
-                            <td>2020년 귀속 프로그램 개발자 간담회 비대면 방식 전환에 따른 안내</td>
+                            <td class="col-title"><a href="#">2020년 귀속 프로그램 개발자 간담회 비대면 방식 전환에 따른 안내</a></td>
                             <td></td>
                             <td>2020-10-23</td>
                         </tr>
                         <tr>
                             <td>201</td>
-                            <td>모바일 안내문 다운로드 기능 제공 안내</td>
+                            <td class="col-title"><a href="#">모바일 안내문 다운로드 기능 제공 안내</a></td>
                             <td class="att-file"></td>
                             <td>2020-10-22</td>
                         </tr>
                         <tr>
                             <td>200</td>
-                            <td>모바일 안내문 열람·출력 개선사항 안내</td>
+                            <td class="col-title"><a href="#">모바일 안내문 열람·출력 개선사항 안내</a></td>
                             <td class="att-file"></td>
                             <td>2020-10-16</td>
                         </tr>
                         <tr>
                             <td>199</td>
-                            <td>전자(세금)계산서 인증서 선택창 관련 프로그램 설치 방법 안내</td>
+                            <td class="col-title"><a href="#">전자(세금)계산서 인증서 선택창 관련 프로그램 설치 방법 안내</a></td>
                             <td></td>
                             <td>2020-10-11</td>
                         </tr>
                         <tr>
                             <td>198</td>
-                            <td>전자(세금)계산서 발급 시 공인인증서 선택창 변경 안내</td>
+                            <td class="col-title"><a href="#">전자(세금)계산서 발급 시 공인인증서 선택창 변경 안내</a></td>
                             <td></td>
                             <td>2020-09-30</td>
                         </tr>
                         <tr>
                             <td>197</td>
-                            <td>국가별보고서 제출의무자 관련 자료제출 안내</td>
+                            <td class="col-title"><a href="#">국가별보고서 제출의무자 관련 자료제출 안내</a></td>
                             <td class="att-file"></td>
                             <td>2020-09-08</td>
                         </tr>
                         <tr>
                             <td>196</td>
-                            <td>보안경고창 문제 해결방법</td>
+                            <td class="col-title"><a href="#">보안경고창 문제 해결방법</a></td>
                             <td></td>
                             <td>2020-08-26</td>
                         </tr>
                         <tr>
                             <td>195</td>
-                            <td>납세자의 최신 휴대전화번호로 전자고지 안내</td>
+                            <td class="col-title"><a href="#">납세자의 최신 휴대전화번호로 전자고지 안내</a></td>
                             <td></td>
                             <td>2020-08-15</td>
                         </tr>
-                        <tr>
+                        <tr class="col-last">
                             <td>194</td>
-                            <td>2019년 귀속 지급명세서 제출 관련 개선사항 안내</td>
+                            <td class="col-title"><a href="#">2019년 귀속 지급명세서 제출 관련 개선사항 안내</a></td>
                             <td class="att-file"></td>
                             <td>2020-08-13</td>
                         </tr>
@@ -179,38 +194,41 @@
                 <ul>
                     <li><a href="#"><img src="images/boards/boards-arr1.png" alt="첫 페이지"></a></li>
                     <li><a href="#"><img src="images/boards/boards-arr2.png" alt="이전 페이지"></a></li>
-                    <li><a href="#"></a>1</li>
-                    <li><a href="#"></a>2</li>
-                    <li><a href="#"></a>3</li>
-                    <li><a href="#"></a>4</li>
-                    <li><a href="#"></a>5</li>
-                    <li><a href="#"></a>6</li>
-                    <li><a href="#"></a>7</li>
-                    <li><a href="#"></a>8</li>
-                    <li><a href="#"></a>9</li>
-                    <li><a href="#"></a>10</li>
+                    <li><a href="#" class="on">1</a></li>
+                    <!-- <li><a href="#">1</a></li> -->
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">1</a>0</li>
                     <li><a href="#"><img src="images/boards/boards-arr3.png" alt="다음 페이지"></a></li>
                     <li><a href="#"><img src="images/boards/boards-arr4.png" alt="마지막 페이지"></a></li>
                 </ul>
+                <p class="total">총 99건 (1/10)</p>
             </div>
-            <p class="total">총 99건 (1/10)</p>
         </div>
-        <div id="bg-footer">
-            <footer id="footer">
-                <ul class="footer-menu">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">홈택스안내</a></li>
-                    <li><a href="#">세무서안내</a></li>
-                    <li><a href="#">통합설치프로그램</a></li>
-                    <li><a href="#">자료실공지</a></li>
-                    <li><a href="#">자주묻는상담사례</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">전체메뉴</a></li>
-                    <li><a href="#">세무서식</a></li>
-                </ul>
-                <address>주소 세종특별자치시 국세청로 8-14 국세청(정부세종2청사 국세청동)   우편번호 30128 </address>
-                <p class="copryright">Copyrightⓒ National Tax Service. All rights reserved.</p>
+    </div>
+    <div id="bg-footer">
+        <footer id="footer">
+            <ul class="footer-menu">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">홈택스안내</a></li>
+                <li><a href="#">세무서안내</a></li>
+                <li><a href="#">통합설치프로그램</a></li>
+                <li><a href="#">자료실공지</a></li>
+                <li><a href="#">자주묻는상담사례</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">전체메뉴</a></li>
+                <li><a href="#">세무서식</a></li>
+            </ul>
+            <address>주소 세종특별자치시 국세청로 8-14 국세청(정부세종2청사 국세청동)   우편번호 30128 </address>
+            <p class="copryright">Copyrightⓒ National Tax Service. All rights reserved.</p>
+            <div class="sitemap-select">
                 <select name="sitemap" id="sitemap-tab-menu">
                     <option value="국세청홈페이지">국세청홈페이지</option>
                     <option value="위택스">위택스</option>
@@ -221,13 +239,13 @@
                     <option value="공익신고안내">공익신고안내</option>
                 </select>
                 <input type="submit" value="이동">
-                <ul>
-                    <li><a href="#">정책브리핑</a></li>
-                    <li><a href="#">국세상담센터</a></li>
-                    <li><a href="#">원격지원</a></li>
-                </ul>
-            </footer>
-        </div>
+            </div>
+            <ul class="footer-site-ico">
+                <li class="footer-site-ico-1"><a href="#">정책브리핑</a></li>
+                <li class="footer-site-ico-2"><a href="#">국세상담센터</a></li>
+                <li class="footer-site-ico-3"><a href="#">원격지원</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
