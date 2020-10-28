@@ -11,7 +11,7 @@
     <header id="header">
         <div class="header_top">
             <p class="header_top_logo"><a href="#">MY 홈택스</a></p>
-            <ul>
+            <ul class="util-menu">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">공인인증센터</a></li>
@@ -20,8 +20,8 @@
             </ul>
         </div>
         <div class="header-bot">
-            <h1 class="logo">로고</h1>
-            <p class="all-menu"><a href="#"></a></p>
+            <h1 class="logo"><a href="#">로고</a></h1>
+            <p class="all-menu"><a href="#gnb"></a></p>
             <p class="search-bar"><a href="#"></a></p>
             <div id="gnb">
                 <ul>
@@ -73,6 +73,7 @@
                         </ul>
                     </li>
                 </ul>
+                <p class="btn-gnb-close">닫기</p>
             </div>
         </div>
     </header>
@@ -81,20 +82,23 @@
             <h1 class="tit-1"><em>전국 세금</em><br>신고 납부 서비스</h1>
             <div class="tax-calc">
                 <h2>빠른납부</h2>
-                <p>전자납부번호 19자리 또는<br>전자수용가번호 15자리 입력</p>
+                <p class="tax-number-1-2">전자납부번호 <span>19자리</span> 또는<br>전자수용가번호 <span>15자리</span> 입력</p>
                 <form action="#" method="POST">
-                    <input type="text" name="tax-number" id="tax-number-1" size="25" placeholder="숫자만 입력" title="전자납부번호입력" ><label for="tax-number-1"></label>
+                    <input type="text" name="tax-number" id="tax-number-1" size="25" placeholder="숫자만 입력" title="전자납부번호입력" ><label for="tax-number-1"><a href="#">조회</a></label>
                     <div class="auto-input-1">
                         <input type="submit" value="새로고침">
                         <input type="submit" value="음성듣기">
                     </div>
-                    <input type="text" name="auto-input" id="auto-input-2" maxlength="10" size="15" placeholder="자동입력방지문자 입력"><label for="auto-input-2"></label>
+                    <input type="text" name="auto-input" id="auto-input-2" size="15" placeholder="자동입력방지문자 입력">
                 </form>
-                <p><a href="#">납부번호 확인방법</a></p>
+                <p class="input-number-1"><a href="#">납부번호 확인방법</a></p>
             </div>
             <div class="calendar">
                 <h2><span class="month">10월</span>세금 캘린더</h2>
                 <div class="slide-1">
+                    
+                </div>
+                <div class="slide-2">
                     
                 </div>
                 <p>매월 신고 납부(~10일)</p>
@@ -105,110 +109,107 @@
                     <li><a href="#">레저세</a></li>
                 </ul>
                 <div class="early-calc">
-                    <p><a href="#">지방세 미리계산</a></p>
+                    <p><a href="#"><span>지방세</span> 미리계산</a></p>
                 </div>
             </div>
         </div>
     </div>
     <div id="banner-slide">
         <h2>자주찾는 메뉴</h2>
-        <div class="slide-2">
-
+        <div class="banner-slide-1">
+            <div class="banner-slide-1-1"></div>
+            <div class="banner-slide-1-2"></div>
         </div>
-        <ul class="banner-ico">
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-            <li><a href="#"></a><p>부가세<br>신고도움 서비스</p></li>
-        </ul>
+        <div class="banner-ico-1">
+            <ul class="banner-ico">
+                <li class="banner-m1"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m2"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m3"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m4"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m5"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m6"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m7"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m8"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m9"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m10"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+            </ul>
+        </div>
         <div class="btn-more-1">
-
+            <a href="#">등록</a>
         </div>
     </div>
-    <div id="board-left">
-        <input type="radio" name="board-tab-1" id="board-tab-1-1"><label for="board-tab-1-1">공지사항</label>
-        <div>
-            <ul>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-            </ul>
-            <p class="btn-more-2" title="공지사항 더보기"></p>
+    <div id="board-service">
+        <div class="board-left">
+            <input type="radio" name="board-tab-1" id="board-tab-1-1" class="board-tab-2-1" checked><label for="board-tab-1-1">공지사항</label>
+            <div>
+                <ul>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                </ul>
+                <p class="btn-more-2" title="공지사항 더보기"><a href="#"></a></p>
+            </div>
+            <input type="radio" name="board-tab-1" id="board-tab-1-2" class="board-tab-2-2"><label for="board-tab-1-2">상담사례</label>
+            <div>
+                <ul>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                </ul>
+                <p class="btn-more-2" title="상담사례 더보기"><a href="#"></a></p>
+            </div>
+            <input type="radio" name="board-tab-1" id="board-tab-1-3" class="board-tab-2-3"><label for="board-tab-1-3">홈택스 안내</label>
+            <div>
+                <ul>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                </ul>
+                <p class="btn-more-2" title="홈택스안내 더보기"><a href="#"></a></p>
+            </div>
         </div>
-        <input type="radio" name="board-tab-1" id="board-tab-1-2"><label for="board-tab-1-2">상담사례</label>
-        <div>
-            <ul>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-            </ul>
-            <p class="btn-more-2" title="상담사례 더보기"></p>
+        <div class="service-right">
+            <h2>세금 종류별 서비스</h2>
+                    <ul>
+                        <li class="service-m1">
+                            <a href="#"></a><p>양도소득세</p>
+                        </li>
+                        <li class="service-m2">
+                            <a href="#"></a><p>종합부동산세</p>
+                        </li>
+                        <li class="service-m3">
+                            <a href="#"></a><p>부가가치세</p>
+                        </li>
+                        <li class="service-m4">
+                            <a href="#"></a><p>전자세금계산서</p>
+                        </li>
+                        <li class="service-m5">
+                            <a href="#"></a><p>원천세</p>
+                        </li>
+                        <li class="service-m6">
+                            <a href="#"></a><p>현금영수증</p>
+                        </li>
+                        <li class="service-m7">
+                            <a href="#"></a><p>종합소득세</p>
+                        </li>
+                        <li class="service-m8">
+                            <a href="#"></a><p>사업자등록</p>
+                        </li>
+                        <li class="service-m9">
+                            <a href="#"></a><p>소비세제</p>
+                        </li>
+                        <li class="service-m10">
+                            <a href="#"></a><p>민원증명</p>
+                        </li>
+                    </ul>
+                </div>
         </div>
-        <input type="radio" name="board-tab-1" id="board-tab-1-3"><label for="board-tab-1-3">홈택스 안내</label>
-        <div>
-            <ul>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-                <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내</a><span>2020-10-05</span></li>
-            </ul>
-            <p class="btn-more-2" title="홈택스안내 더보기"></p>
-        </div>
-    </div>
-    <div id="service-right">
-        <ul>
-            <li>
-                <a href="#"></a>
-                <p>양도소득세</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>종합부동산세</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>부가가치세</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>전자세금계산서</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>원천세</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>현금영수증</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>종합소득세</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>사업자등록</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>소비세제</p>
-            </li>
-            <li>
-                <a href="#"></a>
-                <p>민원증명</p>
-            </li>
-        </ul>
     </div>
     <div id="bg-footer">
         <footer id="footer">
@@ -226,20 +227,22 @@
             </ul>
             <address>주소 세종특별자치시 국세청로 8-14 국세청(정부세종2청사 국세청동)   우편번호 30128 </address>
             <p class="copryright">Copyrightⓒ National Tax Service. All rights reserved.</p>
-            <select name="sitemap" id="sitemap-tab-menu">
-                <option value="국세청홈페이지">국세청홈페이지</option>
-                <option value="위택스">위택스</option>
-                <option value="이택스">이택스</option>
-                <option value="국민건강보험">국민건강보험</option>
-                <option value="기획재정부홈페이지">기획재정부홈페이지</option>
-                <option value="취업후학자금상환서비스">취업후학자금상환서비스</option>
-                <option value="공익신고안내">공익신고안내</option>
-            </select>
-            <input type="submit" value="이동">
-            <ul>
-                <li><a href="#">정책브리핑</a></li>
-                <li><a href="#">국세상담센터</a></li>
-                <li><a href="#">원격지원</a></li>
+            <div class="sitemap-select">
+                <select name="sitemap" id="sitemap-tab-menu">
+                    <option value="국세청홈페이지">국세청홈페이지</option>
+                    <option value="위택스">위택스</option>
+                    <option value="이택스">이택스</option>
+                    <option value="국민건강보험">국민건강보험</option>
+                    <option value="기획재정부홈페이지">기획재정부홈페이지</option>
+                    <option value="취업후학자금상환서비스">취업후학자금상환서비스</option>
+                    <option value="공익신고안내">공익신고안내</option>
+                </select>
+                <input type="submit" value="이동">
+            </div>
+            <ul class="footer-site-ico">
+                <li class="footer-site-ico-1"><a href="#">정책브리핑</a></li>
+                <li class="footer-site-ico-2"><a href="#">국세상담센터</a></li>
+                <li class="footer-site-ico-3"><a href="#">원격지원</a></li>
             </ul>
         </footer>
     </div>
