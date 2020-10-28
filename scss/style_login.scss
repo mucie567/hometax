@@ -8,7 +8,7 @@ body {
       '돋움', sans-serif;
 }
 #header {
-    width: $width-1;
+    max-width: $width-1;
     margin: 0 auto;
   
     .header_top {
@@ -124,15 +124,19 @@ body {
     }
 }
 #container{
-  width: $width-1;
+  max-width: $width-1;
   margin: 0 auto;
   .bg-container {
     border-top: 1px solid #ddd;
     background-color: #dae7f5;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    z-index: -1;
       .login-title-box{
-        width: $width-1;
-        height: 260px;
-        padding: 40px 20px;
+        max-width: $width-1;
+        height: 300px;
+        padding: 40px;
         margin: 0 auto;
         h1{
           margin-bottom: 30px;
@@ -156,7 +160,7 @@ body {
       .mb-box-01{
         display:block;
         width: 270px;
-        height: 156px;
+        height: 165px;
         float: left;
         > li{
           display: block;
@@ -166,6 +170,8 @@ body {
           border: 1px solid $mainColor-2;
           border-radius: 10px;
           text-align: center;
+          padding-top: 10px;
+          height: 90px;
           > a{
             display: inline-block;
             padding-left: 100px;
@@ -176,7 +182,7 @@ body {
             color: #fff;
             &::before{
               content: '';
-              top: 4px;
+              top: 9px;
               left: 20px;
               position: absolute;
               width: 67px;
@@ -188,13 +194,13 @@ body {
         > ul{
           display: block;
           padding-top: 20px;
-          line-height: 2;
+          line-height: 1.8;
         }
       }
       .mb-box-02{
         display:block;
         width: 270px;
-        height: 156px;
+        height: 160px;
         float: left;
         > li{
           display: block;
@@ -204,6 +210,8 @@ body {
           border: 1px solid $mainColor-2;
           border-radius: 10px;
           text-align: center;
+          padding-top: 10px;
+          height: 90px;
           > a{
             display: inline-block;
             padding-left: 100px;
@@ -214,7 +222,7 @@ body {
             color: #fff;
             &::before{
               content: '';
-              top: 0;
+              top: 7px;
               left: 20px;
               position: absolute;
               width: 67px;
@@ -226,13 +234,13 @@ body {
         > ul{
           display: block;
           padding-top: 20px;
-          line-height: 2;
+          line-height: 1.8;
         }
       }
       .mb-box-03{
         display:block;
         width: 270px;
-        height: 156px;
+        height: 160px;
         float: left;
         > li{
           display: block;
@@ -242,6 +250,8 @@ body {
           border: 1px solid $mainColor-2;
           border-radius: 10px;
           text-align: center;
+          padding-top: 10px;
+          height: 90px;
           > a{
             display: inline-block;
             padding-left: 100px;
@@ -252,7 +262,7 @@ body {
             color: #fff;
             &::before{
               content: '';
-              top: 1px;
+              top: 7px;
               left: 23px;
               position: absolute;
               width: 67px;
@@ -264,7 +274,7 @@ body {
         > ul{
           display: block;
           padding-top: 20px;
-          line-height: 2;
+          line-height: 1.8;
         }
       }
 
@@ -276,30 +286,52 @@ body {
       display: inline-block;
       position: relative;
       font-size: 18px;
-      > dl{
-        height: 32px;
-        width: 600px;
+      .name {
+        height: 30px;
+        width: 418px;
         margin-bottom: 10px;
-        
-        > dt{
+        > label {
           display: inline-block;
           top: 0;
           left: 0;
-          width: 150px;
-          padding-right: 30px;
+          width: 115px;
         }
-        > dd{
-          display: inline;
+        >input[type="text"] {
+          width: 100px;
+          height: 30px;
+          border-color: $mainColor-2;
         }
-        
+      }
+      .pw {
+        height: 30px;
+        width: 418px;
+        margin-bottom: 10px;
+        > label {
+          display: inline-block;
+          top: 0;
+          left: 0;
+          width: 115px;
+        }
+        >input[type="text"] {
+          width: 100px;
+          height: 30px;
+          border-color: $mainColor-2;
+        }
+        >input[type="password"] {
+          width: 100px;
+          height: 30px;
+          border-color: $mainColor-2;
+        }
+
       }
       > input[type="submit"]{
         position: absolute;
         top: 0;
         right: 0;
         width: 74px;
-        height: 72px;
+        height: 70px;
         background-color: $mainColor-2;
+        border-radius: 5px;
         font-size: 18px;
         font-weight: bold;
         color: #fff;
@@ -322,13 +354,268 @@ body {
   font-size: 30px;
   padding-bottom: 15px;
 }
+#bg-footer {
+  max-width: 100%;
+  background-color: $footerColor-1;
+  color: #fff;
+  font-size: 15px;
+}
+#footer {
+  position: relative;
+  max-width: $width-1;
+  margin: 0 auto;
+  padding: 30px;
+  .footer-menu {
+    overflow: hidden;
+    margin-bottom: 30px;
+    li {
+      position: relative;
+      float: left;
+      margin-left: 30px;
+      ~ li {
+        &::after {
+          position: absolute;
+          top: 3px;
+          left: -15px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 16px;
+          background-color: #fff;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  address {
+    padding-bottom: 15px;
+  }
+  .sitemap-select {
+    position: absolute;
+    top: 79px;
+    right: 221px;
+    input[type='submit'] {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      width: 50px;
+      height: 35px;
+      color: #fff;
+      background-color: $boarderColor-1;
+      border: 1px solid transparent;
+    }
+  }
+  .footer-site-ico {
+    position: absolute;
+    top: 133px;
+    right: 159px;
+    overflow: hidden;
+    li {
+      text-indent: -9999px;
+      float: left;
+      width: 72px;
+      height: 29px;
+      background: url('../images/common/footer-ico-1.png') no-repeat 0 0;
+      margin-left: 10px;
+      &.footer-site-ico-2 {
+        background: url('../images/common/footer-ico-2.png') no-repeat 0 0;
+      }
+      &.footer-site-ico-3 {
+        background: url('../images/common/footer-ico-3.png') no-repeat 0 0;
+      }
+    }
+  }
+}
 
 
 // PC (1100~)
 @media (min-width:1100px){}
 
-// Tablet && Mobile (~1099)
-@media (max-width:1099px){}
+// Tablet && Mobile (~1075)
+@media (max-width:1075px){
+  // #header{
+  //   // .header-bot{
+  //   //   .all-menu{
+  //   //     right: 280px;
+  //   //   }
+  //   //   .search-bar{
+  //   //     right: 330px;
+  //   //   }
+  //   // }
+  //   .header_top{
+  //     > ul{
+  //       padding-right: 254px;
+  //     }
+  //   }
+  // }
+  #gnb{
+    > ul{
+      display: none;
+    }
+  }
+}
 
-// Tablet (721 ~ 1099)
-@media (min-width:721px) and (max-width:1099px){}
+@media (max-width:920px) {
+  #container{
+    .login-member{
+      .tit-2{
+        .mb-box-01, .mb-box-02, .mb-box-03{
+          width: 240px;
+        }
+      }
+    }
+  }
+  #footer{
+    .sitemap-select{
+      display: none;
+
+    }
+    .footer-site-ico{
+      display: none;
+    }
+  }
+}
+
+// Mobile (~830)
+@media (max-width:830px){
+  #header{
+    .header_top{
+      >ul{
+        display: none;
+      }
+    }
+    .header-bot{
+      padding-left: 300px;
+      margin-bottom: 15px;
+      .all-menu{
+      }
+      .search-bar{
+      }
+    }
+  } 
+  #container{
+    .bg-container{
+      .login-title-box{
+        > h1{
+          text-align: center;
+          > .txt-big{
+            display: block;
+            padding-bottom: 5px;
+          }
+        }
+        > p{
+          line-height: 20px;
+        }
+      }
+    } 
+    .login-member{
+      .tit-2{
+        padding-left: 150px;
+        padding-right: 0;
+        .mb-box-01, .mb-box-02, .mb-box-03{
+          width: 360px;
+          >li{
+
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .sitemap-select{
+      display: none;
+    }
+    .footer-site-ico{
+      display: none;
+    }
+  }
+}
+
+@media (max-width:700px){
+  #header{
+    .header_top{
+      >ul{
+        display: none;
+      }
+    }
+    .header-bot{
+      padding-left: 31.36645962732919%;
+      margin-bottom: 15px;
+      .search-bar{
+        display: none;
+      }
+    }
+  } 
+  #container{
+    .bg-container{
+      margin:0 20px;
+      border-radius: 10px;
+      .login-title-box{
+        height: 350px;
+        > h1{
+          text-align: center;
+          > .txt-big{
+            display: block;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+    .login-member{
+      .tit-2{
+        padding-left: 150px;
+        padding-right: 0;
+        .mb-box-01, .mb-box-02, .mb-box-03{
+          width: 300px;
+          padding-left: 30px;
+  } 
+}
+    }
+  }
+  #footer{
+    .footer-menu{
+      display: none;
+    }
+  }
+}
+
+@media (max-width:630px){
+  #container{
+    .bg-container{
+      .login-title-box{
+        height: 400px;
+        h1{
+          .txt-big{
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .login-member{
+      padding: 50px 20px 0 20px;
+      .tit-2{
+        padding-left: 0;
+      }
+    }
+    .login-non-member{
+      padding: 50px 20px 10px 20px;
+      position: relative;
+      .nmb-box-01{
+        height: 150px;
+        .name, .pw{
+          width: 350px;
+        }
+        >input[type="submit"] {
+          position: absolute;
+          width: 342px;
+          top: 79px;
+          left: -1px;
+        }
+      }
+    }
+  }
+}
+
+
