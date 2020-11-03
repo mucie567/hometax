@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/common/favicon.png" type="image/x-icon">
     <title>국세청 홈택스</title>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <p class="skip-menu"><a href="#container">본문바로가기</a></p>
     <header id="header">
         <div class="header_top">
-            <p class="header_top_logo"><a href="#">MY 홈택스</a></p>
-            <ul>
-                <li><a href="#">로그인</a></li>
+            <p class="header_top_logo"><a href="index.html">MY 홈택스</a></p>
+            <ul class="util-menu">
+                <li><a href="login.html">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">공인인증센터</a></li>
                 <li><a href="#">법령정보</a></li>
@@ -21,19 +23,68 @@
         </div>
         <div class="header-bot">
             <h1 class="logo"><a href="#">로고</a></h1>
-            <p class="all-menu"><a href="#"></a></p>
+            <p class="all-menu"><a href="#gnb"></a></p>
             <p class="search-bar"><a href="#"></a></p>
             <div id="gnb">
                 <ul>
                     <!-- <li class="gnb-m1"><a href="#" class="on">조회/발급</a> -->
-                    <li class="gnb-m1"><a href="#">조회/발급</a>
-                        <ul>
-                            <li><a href="#">전자세금계산서</a></li>
-                            <li><a href="#">현금영수증</a></li>
-                            <li><a href="#">세금신고납부</a></li>
-                            <li><a href="#">기타조회</a></li>
-                        </ul>
-                    </li>
+                        <li class="gnb-m1"><a href="#">조회/발급</a>
+                            <ul>
+                                <li><a href="#">전자세금계산서</a>
+                                    <ul>
+                                        <li><a href="">발급</a></li>
+                                        <li><a href="">목록조회</a></li>
+                                        <li><a href="">합계표 및 통계조회</a></li>
+                                        <li><a href="">사용자유형별 조회권한 관리</a></li>
+                                        <li><a href="">주민번호 수취분 전환 및 조회</a></li>
+                                        <li><a href="">발급보류/예정목록 조회</a></li>
+                                        <li><a href="">메일 발송 목록 조회 및 재발송</a></li>
+                                        <li><a href="">수신전용 메일 신청</a></li>
+                                        <li><a href="">제3자 발급사실 조회</a></li>
+                                        <li><a href="">거래처 및 품목관리</a></li>
+                                        <li><a href="">기타 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">현금영수증</a>
+                                    <ul>
+                                        <li><a href="">현금영수증 조회</a></li>
+                                        <li><a href="">현금영수증 수정</a></li>
+                                        <li><a href="">현금영수증 발급수단</a></li>
+                                        <li><a href="">사업용 신용카드</a></li>
+                                        <li><a href="">화물운전자 복지카드</a></li>
+                                        <li><a href="">납세관리인 조회 서비스</a></li>
+                                        <li><a href="">현금영수증 인터넷 발급 안내</a></li>
+                                        <li><a href="">현금영수증 발급</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">세금신고납부</a>
+                                    <ul>
+                                        <li><a href="">양도소득세 종합안내</a></li>
+                                        <li><a href="">부가가치세 매입자 납부 특례조회</a></li>
+                                        <li><a href="">부가가치세 신고도움 서비스</a></li>
+                                        <li><a href="">부가가치세 카드사 대리 납부 조회</a></li>
+                                        <li><a href="">부가세예정고지 세액조회</a></li>
+                                        <li><a href="">수출실적 명세서 조회</a></li>
+                                        <li><a href="">증여세 결정정보 조회</a></li>
+                                        <li><a href="">상속세</a></li>
+                                        <li><a href="">상속$middot;증여재산 평가하기</a></li>
+                                        <li><a href="">전자신고 결과 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">기타조회</a>
+                                    <ul>
+                                        <li><a href="">과세유형전환</a></li>
+                                        <li><a href="">사업용계좌신고현황</a></li>
+                                        <li><a href="">주류면허상태</a></li>
+                                        <li><a href="">기준 단순 경비율</a></li>
+                                        <li><a href="">위원회회의자료</a></li>
+                                        <li><a href="">과세자료 조회</a></li>
+                                        <li><a href="">지급보증 정상가격 조회</a></li>
+                                        <li><a href="">환급금 상세조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                     <li class="gnb-m2"><a href="#">민원증명</a>
                         <ul>
                             <li><a href="#">민원증명 신청/조회</a></li>
@@ -73,6 +124,7 @@
                         </ul>
                     </li>
                 </ul>
+                <p class="btn-gnb-close"><a href="#"></a></p>
             </div>
         </div>
     </header>
@@ -83,32 +135,220 @@
                 <h2>빠른납부</h2>
                 <p class="tax-number-1-2">전자납부번호 <span>19자리</span> 또는<br>전자수용가번호 <span>15자리</span> 입력</p>
                 <form action="#" method="POST">
-                    <input type="text" name="tax-number" id="tax-number-1" size="25" placeholder="숫자만 입력" title="전자납부번호입력" ><label for="tax-number-1"></label>
+                    <input type="text" name="tax-number" id="tax-number-1" size="25" placeholder="숫자만 입력" title="전자납부번호입력" ><label for="tax-number-1"><a href="#">조회</a></label>
                     <div class="auto-input-1">
                         <input type="submit" value="새로고침">
                         <input type="submit" value="음성듣기">
                     </div>
-                    <input type="text" name="auto-input" id="auto-input-2" size="15" placeholder="자동입력방지문자 입력"><label for="auto-input-2"><a href="#">조회</a></label>
+                    <input type="text" name="auto-input" id="auto-input-2" size="15" placeholder="자동입력방지문자 입력">
                 </form>
                 <p class="input-number-1"><a href="#">납부번호 확인방법</a></p>
             </div>
             <div class="calendar">
-                <h2><span class="month">10월</span>세금 캘린더</h2>
-                <div class="slide-1">
-                    
+                <div class="list-month">
+                    <h2><span class="month">1월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
                 </div>
-                <div class="slide-2">
-                    
+                <div class="list-month">
+                    <h2><span class="month">2월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
                 </div>
-                <p>매월 신고 납부(~10일)</p>
-                <ul>
-                    <li><a href="#">소득세(특별징수)</a></li>
-                    <li><a href="#">주민세</a></li>
-                    <li><a href="#">지역자원시설세</a></li>
-                    <li><a href="#">레저세</a></li>
-                </ul>
-                <div class="early-calc">
-                    <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                <div class="list-month">
+                    <h2><span class="month">3월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">4월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">5월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">6월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">7월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">8월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">9월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">10월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                        
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">11월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
+                </div>
+                <div class="list-month">
+                    <h2><span class="month">12월</span>세금 캘린더</h2>
+                    <button class="slide-1 btn-prev" onclick="prevShow();">
+                    </button>
+                    <button class="slide-2 btn-next" onclick="nextShow();">
+                    </button>
+                    <p>매월 신고 납부(~10일)</p>
+                    <ul>
+                        <li><a href="#">소득세(특별징수)</a></li>
+                        <li><a href="#">주민세</a></li>
+                        <li><a href="#">지역자원시설세</a></li>
+                        <li><a href="#">레저세</a></li>
+                    </ul>
+                    <div class="early-calc">
+                        <p><a href="#"><span>지방세</span> 미리계산</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,18 +359,20 @@
             <div class="banner-slide-1-1"></div>
             <div class="banner-slide-1-2"></div>
         </div>
-        <ul class="banner-ico">
-            <li class="banner-m1"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m2"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m3"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m4"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m5"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m6"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m7"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m8"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m9"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-            <li class="banner-m10"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
-        </ul>
+        <div class="banner-ico-1">
+            <ul class="banner-ico">
+                <li class="banner-m1"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m2"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m3"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m4"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m5"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m6"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m7"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m8"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m9"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+                <li class="banner-m10"><a href="#"><p>부가세<br>신고도움 서비스</p></a></li>
+            </ul>
+        </div>
         <div class="btn-more-1">
             <a href="#">등록</a>
         </div>
@@ -146,16 +388,16 @@
                     <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
                     <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
                 </ul>
-                <p class="btn-more-2" title="공지사항 더보기"><a href="#"></a></p>
+                <p class="btn-more-2" title="공지사항 더보기"><a href="boards.html">공지사항</a></p>
             </div>
             <input type="radio" name="board-tab-1" id="board-tab-1-2" class="board-tab-2-2"><label for="board-tab-1-2">상담사례</label>
             <div>
                 <ul>
-                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
-                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
-                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
-                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
-                    <li><a href="#">2020년 귀속 지급명세서 제출 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 소득금액 증명원에 대하여 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 소득금액 증명원에 대하여 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 소득금액 증명원에 대하여 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 소득금액 증명원에 대하여 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
+                    <li><a href="#">2020년 소득금액 증명원에 대하여 교육용 책자·동영상 안내<span>2020-10-05</span></a></li>
                 </ul>
                 <p class="btn-more-2" title="상담사례 더보기"><a href="#"></a></p>
             </div>
@@ -173,39 +415,39 @@
         </div>
         <div class="service-right">
             <h2>세금 종류별 서비스</h2>
-            <ul>
-                <li class="service-m1">
-                    <a href="#"></a><p>양도소득세</p>
-                </li>
-                <li class="service-m2">
-                    <a href="#"></a><p>종합부동산세</p>
-                </li>
-                <li class="service-m3">
-                    <a href="#"></a><p>부가가치세</p>
-                </li>
-                <li class="service-m4">
-                    <a href="#"></a><p>전자세금계산서</p>
-                </li>
-                <li class="service-m5">
-                    <a href="#"></a><p>원천세</p>
-                </li>
-                <li class="service-m6">
-                    <a href="#"></a><p>현금영수증</p>
-                </li>
-                <li class="service-m7">
-                    <a href="#"></a><p>종합소득세</p>
-                </li>
-                <li class="service-m8">
-                    <a href="#"></a><p>사업자등록</p>
-                </li>
-                <li class="service-m9">
-                    <a href="#"></a><p>소비세제</p>
-                </li>
-                <li class="service-m10">
-                    <a href="#"></a><p>민원증명</p>
-                </li>
-            </ul>
-        </div>
+                    <ul>
+                        <li class="service-m1">
+                            <a href="#"></a><p>양도소득세</p>
+                        </li>
+                        <li class="service-m2">
+                            <a href="#"></a><p>종합부동산세</p>
+                        </li>
+                        <li class="service-m3">
+                            <a href="#"></a><p>부가가치세</p>
+                        </li>
+                        <li class="service-m4">
+                            <a href="#"></a><p>전자세금계산서</p>
+                        </li>
+                        <li class="service-m5">
+                            <a href="#"></a><p>원천세</p>
+                        </li>
+                        <li class="service-m6">
+                            <a href="#"></a><p>현금영수증</p>
+                        </li>
+                        <li class="service-m7">
+                            <a href="#"></a><p>종합소득세</p>
+                        </li>
+                        <li class="service-m8">
+                            <a href="#"></a><p>사업자등록</p>
+                        </li>
+                        <li class="service-m9">
+                            <a href="#"></a><p>소비세제</p>
+                        </li>
+                        <li class="service-m10">
+                            <a href="#"></a><p>민원증명</p>
+                        </li>
+                    </ul>
+                </div>
     </div>
     <div id="bg-footer">
         <footer id="footer">
@@ -230,7 +472,7 @@
                     <option value="이택스">이택스</option>
                     <option value="국민건강보험">국민건강보험</option>
                     <option value="기획재정부홈페이지">기획재정부홈페이지</option>
-                    <option value="취업후학자금상환서비스">취업후학자금상환서비스</option>
+                    <option value="취업후학자금상환서비스">취업후학자금상환</option>
                     <option value="공익신고안내">공익신고안내</option>
                 </select>
                 <input type="submit" value="이동">
