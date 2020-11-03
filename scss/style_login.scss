@@ -3,127 +3,138 @@
 @import url('../css/reset.css');
 
 body {
-    width: 100%;
-    font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
-      '돋움', sans-serif;
+  width: 100%;
+  font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
+    '돋움', sans-serif;
 }
 #header {
+<<<<<<< HEAD
     max-width: $width-1;
     margin: 0 auto;
   
     .header_top {
-      overflow: hidden;
-      .header_top_logo {
-        float: left;
-        a {
-          display: block;
-          width: 93px;
-          height: 50px;
-          color: #fff;
-          font-size: 15px;
-          background-color: $mainColor-1;
-          text-align: center;
-          line-height: 50px;
-        }
-      }
-      ul {
-        float: right;
-        overflow: hidden;
-        margin-top: 20px;
-        li {
-          position: relative;
-          float: left;
-          margin-left: 20px;
-          &:first-child {
-            margin-left: 0;
-          }
-          &::before {
-            position: absolute;
-            top: 5px;
-            left: -11px;
-            content: '';
-            display: block;
-            width: 1px;
-            height: 9px;
-            background-color: $footerColor-1;
-          }
-          a {
-            color: $mainColor-1;
-            font-size: 13px;
-          }
-        }
-      }
-    }
-    .header-bot {
-      position: relative;
-      padding: 20px 0 20px;
-      margin-bottom: 10px;
-      height: 80px;
-      .logo {
+=======
+  max-width: $width-1;
+  margin: 0 auto;
+
+  .header_top {
+    overflow: hidden;
+    .header_top_logo {
+      float: left;
+      a {
         display: block;
-        text-indent: -9999px;
-        width: 202px;
-        height: 54px;
-        background: url('../images/common/logo.png') no-repeat 0 0;
+        width: 93px;
+        height: 50px;
+        color: #fff;
+        font-size: 15px;
+        background-color: $mainColor-1;
+        text-align: center;
+        line-height: 50px;
       }
-      .all-menu {
-        position: absolute;
-        top: 30px;
-        right: 10px;
-        a {
-          display: block;
-          width: 36px;
-          height: 36px;
-          background: url(../images/common/ico-all-menu-1.png) no-repeat 0 0;
+    }
+    ul {
+      float: right;
+>>>>>>> homtax/mainpage
+      overflow: hidden;
+      margin-top: 20px;
+      li {
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
         }
-      }
-      .search-bar {
-        position: absolute;
-        top: 28px;
-        right: 60px;
-        a {
+        &::before {
+          position: absolute;
+          top: 5px;
+          left: -11px;
+          content: '';
           display: block;
-          width: 36px;
-          height: 36px;
-          background: url(../images/common/ico-sch-1.png) no-repeat 0 0;
+          width: 1px;
+          height: 9px;
+          background-color: $footerColor-1;
+        }
+        a {
+          color: $mainColor-1;
+          font-size: 13px;
         }
       }
     }
+  }
+  .header-bot {
+    position: relative;
+    padding: 20px 0 20px;
+    margin-bottom: 10px;
+    height: 80px;
+    .logo {
+      display: block;
+      text-indent: -9999px;
+      width: 202px;
+      height: 54px;
+      background: url('../images/common/logo.png') no-repeat 0 0;
+    }
+    .all-menu {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: url(../images/common/ico-all-menu-1.png) no-repeat 0 0;
+      }
+    }
+    .search-bar {
+      position: absolute;
+      top: 28px;
+      right: 60px;
+      a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: url(../images/common/ico-sch-1.png) no-repeat 0 0;
+      }
+    }
+  }
 }
 #gnb {
-    position: absolute;
-    top: 38px;
-    left: 196px;
-    > ul {
-      overflow: hidden;
-      *[class*='gnb-'] {
-        float: left;
-        margin-left: 40px;
-        > a {
-          font-size: 18px;
-          font-weight: bold;
-          color: $fontColor-1;
+  position: absolute;
+  top: 38px;
+  left: 196px;
+  > ul {
+    overflow: hidden;
+    *[class*='gnb-'] {
+      float: left;
+      margin-left: 40px;
+      > a {
+        font-size: 18px;
+        font-weight: bold;
+        color: $fontColor-1;
+      }
+      > ul {
+        overflow: hidden;
+        display: none;
+        &.on {
+          display: block;
         }
-        > ul {
-          overflow: hidden;
-          display: none;
-          &.on {
-            display: block;
-          }
-          li {
-            padding-left: 120px;
-            font-size: 16px;
-            color: $mainColor-1;
-            float: left;
-            &:first-child {
-              padding-left: 0;
-            }
+        li {
+          padding-left: 120px;
+          font-size: 16px;
+          color: $mainColor-1;
+          float: left;
+          &:first-child {
+            padding-left: 0;
           }
         }
       }
     }
+  }
 }
+<<<<<<< HEAD
 #container{
+=======
+#container {
+>>>>>>> homtax/mainpage
   max-width: $width-1;
   margin: 0 auto;
   .bg-container {
@@ -133,6 +144,7 @@ body {
     max-width: 100%;
     height: 100%;
     z-index: -1;
+<<<<<<< HEAD
       .login-title-box{
         max-width: $width-1;
         height: 300px;
@@ -143,26 +155,38 @@ body {
           .txt-big{
             font-size: 50px;
           }
+=======
+    .login-title-box {
+      max-width: $width-1;
+      height: 300px;
+      padding: 40px;
+      margin: 0 auto;
+      h1 {
+        margin-bottom: 30px;
+        .txt-big {
+          font-size: 50px;
+>>>>>>> homtax/mainpage
         }
-        > p{
-          line-height: 40px;
-          .txt-red{
-            color: red;
-          }
+      }
+      > p {
+        line-height: 40px;
+        .txt-red {
+          color: red;
         }
       }
     }
-  .login-member{
-    padding: 50px 45px 0 45px ;
-    .tit-2{
+  }
+  .login-member {
+    padding: 50px 45px 0 45px;
+    .tit-2 {
       padding-right: 20px;
       overflow: hidden;
-      .mb-box-01{
-        display:block;
+      .mb-box-01 {
+        display: block;
         width: 270px;
         height: 165px;
         float: left;
-        > li{
+        > li {
           display: block;
           margin-right: 20px;
           position: relative;
@@ -172,7 +196,11 @@ body {
           text-align: center;
           padding-top: 10px;
           height: 90px;
+<<<<<<< HEAD
           > a{
+=======
+          > a {
+>>>>>>> homtax/mainpage
             display: inline-block;
             padding-left: 100px;
             height: 72px;
@@ -180,29 +208,29 @@ body {
             font-weight: bold;
             line-height: 1.5;
             color: #fff;
-            &::before{
+            &::before {
               content: '';
               top: 9px;
               left: 20px;
               position: absolute;
               width: 67px;
               height: 72px;
-              background: url('../images/login/mb-login-01.png')no-repeat 0 0;
+              background: url('../images/login/mb-login-01.png') no-repeat 0 0;
             }
           }
         }
-        > ul{
+        > ul {
           display: block;
           padding-top: 20px;
           line-height: 1.8;
         }
       }
-      .mb-box-02{
-        display:block;
+      .mb-box-02 {
+        display: block;
         width: 270px;
         height: 160px;
         float: left;
-        > li{
+        > li {
           display: block;
           margin-right: 20px;
           position: relative;
@@ -212,7 +240,11 @@ body {
           text-align: center;
           padding-top: 10px;
           height: 90px;
+<<<<<<< HEAD
           > a{
+=======
+          > a {
+>>>>>>> homtax/mainpage
             display: inline-block;
             padding-left: 100px;
             height: 72px;
@@ -220,29 +252,29 @@ body {
             font-weight: bold;
             line-height: 1.5;
             color: #fff;
-            &::before{
+            &::before {
               content: '';
               top: 7px;
               left: 20px;
               position: absolute;
               width: 67px;
               height: 72px;
-              background: url('../images/login/mb-login-02.png')no-repeat 0 0;
+              background: url('../images/login/mb-login-02.png') no-repeat 0 0;
             }
           }
         }
-        > ul{
+        > ul {
           display: block;
           padding-top: 20px;
           line-height: 1.8;
         }
       }
-      .mb-box-03{
-        display:block;
+      .mb-box-03 {
+        display: block;
         width: 270px;
         height: 160px;
         float: left;
-        > li{
+        > li {
           display: block;
           margin-right: 20px;
           position: relative;
@@ -252,7 +284,11 @@ body {
           text-align: center;
           padding-top: 10px;
           height: 90px;
+<<<<<<< HEAD
           > a{
+=======
+          > a {
+>>>>>>> homtax/mainpage
             display: inline-block;
             padding-left: 100px;
             height: 72px;
@@ -260,29 +296,28 @@ body {
             font-weight: bold;
             line-height: 1.5;
             color: #fff;
-            &::before{
+            &::before {
               content: '';
               top: 7px;
               left: 23px;
               position: absolute;
               width: 67px;
               height: 72px;
-              background: url('../images/login/mb-login-03.png')no-repeat 0 0;
+              background: url('../images/login/mb-login-03.png') no-repeat 0 0;
             }
           }
         }
-        > ul{
+        > ul {
           display: block;
           padding-top: 20px;
           line-height: 1.8;
         }
       }
-
     }
   }
-  .login-non-member{
-    padding: 50px 45px 50px 45px ;
-    .nmb-box-01{
+  .login-non-member {
+    padding: 50px 45px 50px 45px;
+    .nmb-box-01 {
       display: inline-block;
       position: relative;
       font-size: 18px;
@@ -296,11 +331,16 @@ body {
           left: 0;
           width: 115px;
         }
+<<<<<<< HEAD
         >input[type="text"] {
+=======
+        > input[type='text'] {
+>>>>>>> homtax/mainpage
           width: 100px;
           height: 30px;
           border-color: $mainColor-2;
         }
+<<<<<<< HEAD
       }
       .pw {
         height: 30px;
@@ -323,8 +363,31 @@ body {
           border-color: $mainColor-2;
         }
 
+=======
+>>>>>>> homtax/mainpage
       }
-      > input[type="submit"]{
+      .pw {
+        height: 30px;
+        width: 418px;
+        margin-bottom: 10px;
+        > label {
+          display: inline-block;
+          top: 0;
+          left: 0;
+          width: 115px;
+        }
+        > input[type='text'] {
+          width: 100px;
+          height: 30px;
+          border-color: $mainColor-2;
+        }
+        > input[type='password'] {
+          width: 100px;
+          height: 30px;
+          border-color: $mainColor-2;
+        }
+      }
+      > input[type='submit'] {
         position: absolute;
         top: 0;
         right: 0;
@@ -337,20 +400,20 @@ body {
         color: #fff;
       }
     }
-    > p{
+    > p {
       padding-top: 20px;
       line-height: 1.6;
-      > .txt-red{
+      > .txt-red {
         color: red;
       }
-      > .txt-bold{
+      > .txt-bold {
         font-weight: bold;
         font-size: 15px;
       }
     }
   }
 }
-#tit-1{
+#tit-1 {
   font-size: 30px;
   padding-bottom: 15px;
 }
@@ -394,8 +457,13 @@ body {
   }
   .sitemap-select {
     position: absolute;
+<<<<<<< HEAD
     top: 79px;
     right: 221px;
+=======
+    top: 110px;
+    right: 335px;
+>>>>>>> homtax/mainpage
     input[type='submit'] {
       position: absolute;
       top: 0;
@@ -409,8 +477,13 @@ body {
   }
   .footer-site-ico {
     position: absolute;
+<<<<<<< HEAD
     top: 133px;
     right: 159px;
+=======
+    top: 110px;
+    right: 10px;
+>>>>>>> homtax/mainpage
     overflow: hidden;
     li {
       text-indent: -9999px;
@@ -428,11 +501,126 @@ body {
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+#sitemap-tab-menu {
+  width: 190px;
+  height: 35px;
+  background-color: $footerColor-1;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 16px;
+}
+>>>>>>> homtax/mainpage
 
 // PC (1100~)
-@media (min-width:1100px){}
+@media (min-width: 1100px) {
+}
 
+// Tablet && Mobile (~1075)
+@media (max-width: 1075px) {
+  // #header{
+  //   // .header-bot{
+  //   //   .all-menu{
+  //   //     right: 280px;
+  //   //   }
+  //   //   .search-bar{
+  //   //     right: 330px;
+  //   //   }
+  //   // }
+  //   .header_top{
+  //     > ul{
+  //       padding-right: 254px;
+  //     }
+  //   }
+  // }
+  #gnb {
+    > ul {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  #container {
+    .login-member {
+      .tit-2 {
+        .mb-box-01,
+        .mb-box-02,
+        .mb-box-03 {
+          width: 240px;
+        }
+      }
+    }
+  }
+  #footer {
+    .sitemap-select {
+      display: none;
+    }
+    .footer-site-ico {
+      display: none;
+    }
+  }
+}
+
+// Mobile (~830)
+@media (max-width: 830px) {
+  #header {
+    .header_top {
+      > ul {
+        display: none;
+      }
+    }
+    .header-bot {
+      padding-left: 300px;
+      margin-bottom: 15px;
+      .all-menu {
+      }
+      .search-bar {
+      }
+    }
+  }
+  #container {
+    .bg-container {
+      .login-title-box {
+        > h1 {
+          text-align: center;
+          > .txt-big {
+            display: block;
+            padding-bottom: 5px;
+          }
+        }
+        > p {
+          line-height: 20px;
+        }
+      }
+    }
+    .login-member {
+      .tit-2 {
+        padding-left: 150px;
+        padding-right: 0;
+        .mb-box-01,
+        .mb-box-02,
+        .mb-box-03 {
+          width: 360px;
+          > li {
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .sitemap-select {
+      display: none;
+    }
+    .footer-site-ico {
+      display: none;
+    }
+  }
+}
+
+<<<<<<< HEAD
 // Tablet && Mobile (~1075)
 @media (max-width:1075px){
   // #header{
@@ -557,12 +745,39 @@ body {
         > h1{
           text-align: center;
           > .txt-big{
+=======
+@media (max-width: 700px) {
+  #header {
+    .header_top {
+      > ul {
+        display: none;
+      }
+    }
+    .header-bot {
+      padding-left: 31.36645962732919%;
+      margin-bottom: 15px;
+      .search-bar {
+        display: none;
+      }
+    }
+  }
+  #container {
+    .bg-container {
+      margin: 0 20px;
+      border-radius: 10px;
+      .login-title-box {
+        height: 350px;
+        > h1 {
+          text-align: center;
+          > .txt-big {
+>>>>>>> homtax/mainpage
             display: block;
             padding-bottom: 5px;
           }
         }
       }
     }
+<<<<<<< HEAD
     .login-member{
       .tit-2{
         padding-left: 150px;
@@ -619,3 +834,62 @@ body {
 }
 
 
+=======
+    .login-member {
+      .tit-2 {
+        padding-left: 150px;
+        padding-right: 0;
+        .mb-box-01,
+        .mb-box-02,
+        .mb-box-03 {
+          width: 300px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  #footer {
+    .footer-menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  #container {
+    .bg-container {
+      .login-title-box {
+        height: 400px;
+        h1 {
+          .txt-big {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .login-member {
+      padding: 50px 20px 0 20px;
+      .tit-2 {
+        padding-left: 0;
+      }
+    }
+    .login-non-member {
+      padding: 50px 20px 10px 20px;
+      position: relative;
+      .nmb-box-01 {
+        height: 150px;
+        .name,
+        .pw {
+          width: 350px;
+        }
+        > input[type='submit'] {
+          position: absolute;
+          width: 342px;
+          top: 79px;
+          left: -1px;
+        }
+      }
+    }
+  }
+}
+>>>>>>> homtax/mainpage
